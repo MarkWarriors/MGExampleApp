@@ -1,0 +1,9 @@
+// MARK: - TabItem
+"TabItem.name" = "Home";
+
+// MARK: - Scenes: Home
+"Scenes.Home.title" = "Home";
+"Scenes.Home.description" = "Questa é un testo di descrizione";
+"Scenes.Home.specialLabel" = "Questo é un testo davvero speciale";
+"Scenes.Home.nextEventTitleLabel" = "Prossimo Evento d'Arte:";
+"Scenes.Errors.noEventsInFuture" = "Non ci sono eventi nell'imediato futuro";

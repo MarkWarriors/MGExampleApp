@@ -1,0 +1,24 @@
+[
+    {
+        "id": "4546",
+        "name": "Pasta and Pizza",
+        "description": "A travel through Italy, from north to south, discovering places, food and wine of the Belpaese",
+        "date": "01/10/2020 20:30:00",
+        "price": "15.50",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1515859005217-8a1f08870f59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "travel",
+        "longDescription": ""
+    },
+    {
+        "id": "4",
+        "name": "Discover Japan",
+        "description": "A tour of the most beautiful cities of the archipelago and an inside look of the wonderful japanese culture",
+        "date": "02/10/2020 20:30:00",
+        "price": "17.50",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "travel",
+        "longDescription": ""
+    }
+]

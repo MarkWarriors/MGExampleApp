@@ -1,0 +1,46 @@
+[
+    {
+        "id": "123",
+        "name": "Star Wars Universe",
+        "description": "In a galaxy far far away... Let's have a deep dive into the universe of the famous fantascientific saga, from the challenges of the first movie to the merchandising, every fact that a Star Wars fan needs to know.",
+        "date": "24/09/2020 20:30:00",
+        "price": "20",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1579566346927-c68383817a25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "movie",
+        "longDescription": ""
+    },
+    {
+        "id": "124",
+        "name": "The World of Harry Potter",
+        "description": "Facts and curiosity of the magical world created by JK Rowling ",
+        "date": "25/09/2020 20:30:00",
+        "price": "18.70",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1533462506003-13c20d204b58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "movie",
+        "longDescription": ""
+    },
+    {
+        "id": "856",
+        "name": "Sand and Worms",
+        "description": "Have a look into the universe of Dune, the fantascientific saga written by Frank Herbert that will soon return on the big screen",
+        "date": "30/09/2020 20:30:00",
+        "price": "20",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1541919635-250e08fbdd21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "movie",
+        "longDescription": ""
+    },
+    {
+        "id": "7757",
+        "name": "Christopher Nolan",
+        "description": "A deep dive into the filmography of the British-American filmmaker",
+        "date": "05/10/2020 20:30:00",
+        "price": "25",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1533928298208-27ff66555d8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "movie",
+        "longDescription": ""
+    }
+]

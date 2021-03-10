@@ -1,0 +1,5 @@
+// MARK: - TabItem
+"TabItem.name" = "Settings";
+
+// MARK: - Scenes: Settings
+"Scenes.Settings.logoutButtonTitle" = "Logout";

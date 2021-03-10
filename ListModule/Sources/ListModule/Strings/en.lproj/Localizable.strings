@@ -1,0 +1,6 @@
+// MARK: - TabItem
+"TabItem.name" = "Events";
+
+// MARK: - Scenes: List
+"Scenes.List.title" = "Events";
+"Scenes.List.noEventsInFuture" = "No events in the near future";

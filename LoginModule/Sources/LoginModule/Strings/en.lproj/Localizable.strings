@@ -1,0 +1,26 @@
+// MARK: - Scenes: Login
+"Scenes.Login.title" = "Login";
+"Scenes.Login.usernamePlaceholder" = "Username";
+"Scenes.Login.passwordPlaceholder" = "Password";
+"Scenes.Login.loginButton" = "Login";
+"Scenes.Login.registerAccountButton" = "Register New Account";
+"Scenes.Login.Errors.wrongCredentials" = "Wrong credentials inserted";
+
+// MARK: - Scenes: RegisterAccount
+"Scenes.RegisterAccount.title" = "Register Account";
+"Scenes.Login.Errors.formNotValid" = "Form is not valid";
+"Scenes.Login.Errors.errorRegisteringAccount" = "An error has occured while registering the account";
+"Scenes.RegisterAccount.Form.Name.title" = "Name";
+"Scenes.RegisterAccount.Form.Name.error" = "Min 2 characters";
+"Scenes.RegisterAccount.Form.Surname.title" = "Surname";
+"Scenes.RegisterAccount.Form.Surname.error" = "Min 2 characters";
+"Scenes.RegisterAccount.Form.Username.title" = "Username";
+"Scenes.RegisterAccount.Form.Username.error" = "Min 2 characters";
+"Scenes.RegisterAccount.Form.Email.title" = "Email";
+"Scenes.RegisterAccount.Form.Email.error" = "Invalid email";
+"Scenes.RegisterAccount.Form.ConfirmEmail.title" = "Confirm Email";
+"Scenes.RegisterAccount.Form.ConfirmEmail.error" = "Invalid email";
+"Scenes.RegisterAccount.Form.Password.title" = "Password";
+"Scenes.RegisterAccount.Form.Password.error" = "This is not a valid password";
+"Scenes.RegisterAccount.Form.ConfirmPassword.title" = "Confirm Password";
+"Scenes.RegisterAccount.Form.ConfirmPassword.error" = "This is not a valid password";

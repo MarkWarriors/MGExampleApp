@@ -1,0 +1,34 @@
+[
+    
+    {
+        "name": "Mochi", 
+        "avatar": "🐕", 
+        "healthLevel": 100, 
+        "heroType": "Cheese Lover"
+    },
+    {
+        "name": "Power Panda",
+        "avatar": "🐼", 
+        "healthLevel": 14, 
+        "heroType": "Forest Dweller"
+    },
+    {
+        "name": "Unipony", 
+        "avatar": "🦄", 
+        "healthLevel": 67, 
+        "heroType": "Free Rangers"
+    },
+    {
+        "name": "Spouty", 
+        "avatar": "🐳", 
+        "healthLevel": 83, 
+        "heroType": "Deep Sea Goer"
+    },
+    {
+        "name": "Sneaky Snake", 
+        "avatar": "🐍", 
+        "healthLevel": 100, 
+        "heroType": "Hissing warrior"
+    }
+]
+

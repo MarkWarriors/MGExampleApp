@@ -1,0 +1,112 @@
+[
+    {
+        "id": "123",
+        "name": "Star Wars Universe",
+        "description": "In a galaxy far far away... Let's have a deep dive into the universe of the famous fantascientific saga, from the challenges of the first movie to the merchandising, every fact that a Star Wars fan needs to know.",
+        "date": "24/09/2020 20:30:00",
+        "price": "20",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1579566346927-c68383817a25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "movie",
+        "longDescription": ""
+    },
+    {
+        "id": "124",
+        "name": "The World of Harry Potter",
+        "description": "Facts and curiosity of the magical world created by JK Rowling ",
+        "date": "25/09/2020 20:30:00",
+        "price": "18.70",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1533462506003-13c20d204b58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "movie",
+        "longDescription": ""
+    },
+    {
+        "id": "45",
+        "name": "The Art of Kandinskij",
+        "description": "Discover the wonderful art of the russian painter and art theorist",
+        "date": "27/09/2020 20:30:00",
+        "price": "12",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1590147494435-b734423c8491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "art",
+        "longDescription": ""
+    },
+    {
+        "id": "242",
+        "name": "Inside René Magritte",
+        "description": "An event dedicated to the Belgian master of Surrealism that has been well-received by both critics and visitors",
+        "date": "28/09/2020 20:30:00",
+        "price": "12",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1531410569299-927453214750?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "art",
+        "longDescription": ""
+    },
+    {
+        "id": "856",
+        "name": "Sand and Worms",
+        "description": "Have a look into the universe of Dune, the fantascientific saga written by Frank Herbert that will soon return on the big screen",
+        "date": "30/09/2020 20:30:00",
+        "price": "20",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1541919635-250e08fbdd21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "movie",
+        "longDescription": ""
+    },
+    {
+        "id": "4546",
+        "name": "Pasta and Pizza",
+        "description": "A travel through Italy, from north to south, discovering places, food and wine of the Belpaese",
+        "date": "01/10/2020 20:30:00",
+        "price": "15.50",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1515859005217-8a1f08870f59?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "travel",
+        "longDescription": ""
+    },
+    {
+        "id": "4",
+        "name": "Discover Japan",
+        "description": "A tour of the most beautiful cities of the archipelago and an inside look of the wonderful japanese culture",
+        "date": "02/10/2020 20:30:00",
+        "price": "17.50",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "travel",
+        "longDescription": ""
+    },
+    {
+        "id": "56",
+        "name": "Into the Cyberpunk Art",
+        "description": "From the Roleplay game to the videogame, let's talk about the art of the world created by Mike Pondsmith",
+        "date": "04/10/2020 20:30:00",
+        "price": "10",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1531279550271-23c2a77a765c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "art",
+        "longDescription": ""
+    },
+    {
+        "id": "7757",
+        "name": "Christopher Nolan",
+        "description": "A deep dive into the filmography of the British-American filmmaker",
+        "date": "05/10/2020 20:30:00",
+        "price": "25",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1533928298208-27ff66555d8d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "movie",
+        "longDescription": ""
+    },
+    {
+        "id": "75432",
+        "name": "A night with Ennio Morricone",
+        "description": "The story and the artistic heritage of the internationally renowned Italian film composer Ennio Morricone",
+        "date": "07/10/2020 20:30:00",
+        "price": "29.50",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1475331728068-c4ca48823b97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "music",
+        "longDescription": ""
+    }
+]

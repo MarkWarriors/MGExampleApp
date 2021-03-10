@@ -1,0 +1,11 @@
+//
+//  Mock.xcconfig
+//  MGExampleApp
+//
+//  Created by Marco Guerrieri on 24/03/2021.
+//
+
+#include "../CommonSettings.xcconfig"
+
+XCC_BUNDLE_NAME = Mock App
+XCC_CONFIG_PATH = Mock/Config-Mock.plist

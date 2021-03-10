@@ -1,0 +1,15 @@
+// MARK: - General
+"CommonStrings.General.appName" = "MG Example App in Italiano!";
+
+// MARK: - Actions
+"CommonStrings.Actions.okActionTitle" = "Ok";
+"CommonStrings.Actions.cancelActionTitle" = "Annulla";
+"CommonStrings.Actions.doneActionTitle" = "Fatto";
+"CommonStrings.Actions.retryActionTitle" = "Riprova";
+
+// MARK: - Errors
+"CommonStrings.Errors.generic" = "Errore inatteso";
+
+// MARK: - Alert
+"CommonStrings.Alert.attention" = "Attenzione";
+"CommonStrings.Alert.error" = "Errore";

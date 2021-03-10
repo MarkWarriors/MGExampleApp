@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "NetworkServices">
+      <FileRef
+         location = "group:MockServer">
+      </FileRef>
+      <FileRef
+         location = "group:Networking">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Modules">
+      <FileRef
+         location = "group:SettingsModule">
+      </FileRef>
+      <FileRef
+         location = "group:LoginModule">
+      </FileRef>
+      <FileRef
+         location = "group:HomeModule">
+      </FileRef>
+      <FileRef
+         location = "group:ListModule">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Common">
+      <FileRef
+         location = "group:CommonInstances">
+      </FileRef>
+      <FileRef
+         location = "group:CommonDomain">
+      </FileRef>
+      <FileRef
+         location = "group:CommonUI">
+      </FileRef>
+      <FileRef
+         location = "group:CommonTests">
+      </FileRef>
+      <FileRef
+         location = "group:CommonComponents">
+      </FileRef>
+      <FileRef
+         location = "group:CommonStrings">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:MGExampleApp/MGExampleApp.xcodeproj">
+   </FileRef>
+</Workspace>

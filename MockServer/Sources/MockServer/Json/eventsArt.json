@@ -1,0 +1,35 @@
+[
+    {
+        "id": "45",
+        "name": "The Art of Kandinskij",
+        "description": "Discover the wonderful art of the russian painter and art theorist",
+        "date": "27/09/2020 20:30:00",
+        "price": "12",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1590147494435-b734423c8491?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "art",
+        "longDescription": ""
+    },
+    {
+        "id": "242",
+        "name": "Inside René Magritte",
+        "description": "An event dedicated to the Belgian master of Surrealism that has been well-received by both critics and visitors",
+        "date": "28/09/2020 20:30:00",
+        "price": "12",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1531410569299-927453214750?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "art",
+        "longDescription": ""
+    },
+    {
+        "id": "56",
+        "name": "Into the Cyberpunk Art",
+        "description": "From the Roleplay game to the videogame, let's talk about the art of the world created by Mike Pondsmith",
+        "date": "04/10/2020 20:30:00",
+        "price": "10",
+        "currency": "$",
+        "image": "https://images.unsplash.com/photo-1531279550271-23c2a77a765c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+        "category": "art",
+        "longDescription": ""
+    }
+]

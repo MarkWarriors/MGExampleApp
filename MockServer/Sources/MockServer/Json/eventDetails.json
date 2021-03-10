@@ -1,0 +1,11 @@
+{
+  "id": "123",
+  "name": "Star Wars Universe",
+  "description": "In a galaxy far far away... Let's have a deep dive into the universe of the famous fantascientific saga, from the challenges of the first movie to the merchandising, every fact that a Star Wars fan needs to know.",
+  "date": "24/09/2020 20:30:00",
+  "price": "20",
+  "currency": "$",
+  "image": "https://images.unsplash.com/photo-1579566346927-c68383817a25?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
+  "category": "movie",
+  "longDescription": ""
+}

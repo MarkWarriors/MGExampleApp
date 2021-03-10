@@ -1,0 +1,11 @@
+//
+//  Prod.xcconfig
+//  MGExampleApp
+//
+//  Created by Marco Guerrieri on 24/03/2021.
+//
+
+#include "../CommonSettings.xcconfig"
+
+XCC_BUNDLE_NAME = Prod App
+XCC_CONFIG_PATH = Prod/Config-Prod.plist
