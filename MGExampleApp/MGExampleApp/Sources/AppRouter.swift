@@ -25,6 +25,7 @@ final class AppRouter: AppRouterType {
   private let appEventListener: AppEventListenerType
   private let accountCache: AccountCacheType
   private let context: Context
+  private let eventDetailUseCase: EventDetailUseCaseType
 
   private var loginRouter: LoginModuleRouterType?
   private var homeRouter: HomeModuleRouterType?
@@ -33,9 +34,11 @@ final class AppRouter: AppRouterType {
 
   private var storedDeepLinkAction: DeepLinkAction?
 
-  init(appEventListener: AppEventListenerType,
+  init(eventDetailUseCase: EventDetailUseCaseType,
+       appEventListener: AppEventListenerType,
        accountCache: AccountCacheType,
        context: Context) {
+    self.eventDetailUseCase = eventDetailUseCase
     self.appEventListener = appEventListener
     self.accountCache = accountCache
     self.context = context
@@ -87,8 +90,8 @@ final class AppRouter: AppRouterType {
       storedDeepLinkAction = action
       return
     }
-    let useCase = MainAppDependencies.shared.eventDetailUseCase()
-    useCase.fetch(eventId: id) { [weak self] (result) in
+
+    eventDetailUseCase.fetch(eventId: id) { [weak self] (result) in
       guard case let .success(event) = result else {return}
       let vc = router.getEventDetailsViewController(for: event)
       self?.mainViewController.present(vc, animated: true, completion: nil)

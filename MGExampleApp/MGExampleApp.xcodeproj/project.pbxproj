@@ -12,6 +12,7 @@
 		901AA54C258B877900229C09 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901AA54A258B877900229C09 /* MainViewController.swift */; };
 		901AA54D258B877900229C09 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 901AA54B258B877900229C09 /* MainViewController.xib */; };
 		901AA552258B879700229C09 /* ListModule in Frameworks */ = {isa = PBXBuildFile; productRef = 901AA551258B879700229C09 /* ListModule */; };
+		9033EE8E261E11650085A570 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9033EE7D261E11070085A570 /* AppRouterTests.swift */; };
 		9044A0D4258B76E200A41784 /* HomeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 9044A0D3258B76E200A41784 /* HomeModule */; };
 		905EDCD32615FBD30029F710 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90B6CA5F260BB06600790678 /* Config.plist */; };
 		905EDCD92615FBD40029F710 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90B6CA5F260BB06600790678 /* Config.plist */; };
@@ -108,6 +109,7 @@
 		900D0AAC25F92AFE0070774B /* MainAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppDependencies.swift; sourceTree = "<group>"; };
 		901AA54A258B877900229C09 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		901AA54B258B877900229C09 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		9033EE7D261E11070085A570 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
 		909F2CE22588F83E00E43399 /* MGExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909F2CE52588F83E00E43399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		909F2CE72588F83E00E43399 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +227,14 @@
 			path = RootScene;
 			sourceTree = "<group>";
 		};
+		9033EE7C261E10F20085A570 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9033EE7D261E11070085A570 /* AppRouterTests.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		906208B6258CE78C00C6ADB9 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +291,7 @@
 		909F2CFB2588F84000E43399 /* MGExampleAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				9033EE7C261E10F20085A570 /* Router */,
 				909F2CFC2588F84000E43399 /* MGExampleAppTests.swift */,
 				909F2CFE2588F84000E43399 /* Info.plist */,
 			);
@@ -672,6 +683,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9033EE8E261E11650085A570 /* AppRouterTests.swift in Sources */,
 				909F2CFD2588F84000E43399 /* MGExampleAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

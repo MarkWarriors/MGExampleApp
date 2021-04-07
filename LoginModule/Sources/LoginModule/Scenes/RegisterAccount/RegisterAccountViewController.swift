@@ -189,15 +189,10 @@ extension RegisterAccountViewController {
     guard
       let keyboardHeight = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.height
     else { return }
-    print("keyboard opening height \(keyboardHeight)")
     adjustScrollForKeyboardShowing(keyboardHeight: keyboardHeight)
   }
 
   @objc private func keyboardWillHide(_ notification: Notification) {
-    guard
-      let keyboardHeight = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue.height
-    else { return }
-    print("keyboard closing height \(keyboardHeight)")
     adjustScrollForKeyboardHiding()
 
   }
