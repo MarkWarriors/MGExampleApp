@@ -16,12 +16,14 @@ let package = Package(
   ],
   dependencies: [
     .package(path: "../Networking"),
+    .package(path: "../CommonComponents"),
   ],
   targets: [
     .target(
       name: "CommonDomain",
       dependencies: [
-        "Networking"
+        "Networking",
+        "CommonComponents"
       ]),
     .testTarget(
       name: "CommonDomainTests",
