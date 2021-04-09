@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Networking
 
 struct ImageCache {
   static let shared = NSCache<NSString, UIImage>()

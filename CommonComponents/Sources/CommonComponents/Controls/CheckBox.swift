@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import CommonComponents
 
 public final class ShellCheckBox: UIControl {
 
