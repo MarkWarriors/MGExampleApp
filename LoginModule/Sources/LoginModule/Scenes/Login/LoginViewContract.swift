@@ -8,8 +8,9 @@
 import UIKit
 import CommonComponents
 import CommonDomain
+import AuthenticationServices
 
-protocol LoginViewPresentable: Trackable {
+protocol LoginViewPresentable: Trackable, ASAuthorizationControllerPresentationContextProviding {
   func configure(with viewModel: LoginViewModel)
   func showError(viewModel: LoginViewErrorViewModel)
   func updateLoginButton(enabled: Bool)
@@ -21,6 +22,7 @@ protocol LoginViewPresenterType {
   func retryOnErrorAlertTapped(username: String, password: String)
   func loginButtonTapped(username: String, password: String)
   func registerButtonTapped()
+  func signInWithAppleButtonTapped(context: ASAuthorizationControllerPresentationContextProviding)
 }
 
 struct LoginViewModel {

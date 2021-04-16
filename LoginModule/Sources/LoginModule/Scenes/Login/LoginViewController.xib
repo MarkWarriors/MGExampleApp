@@ -14,7 +14,8 @@
                 <outlet property="loginButton" destination="Ikd-jv-13s" id="Jy4-4R-rXd"/>
                 <outlet property="logoImageView" destination="ChP-Ky-rvR" id="cKd-MU-Q4h"/>
                 <outlet property="passwordTextField" destination="IEf-qY-wNV" id="O7h-M4-f4j"/>
-                <outlet property="registerAccountButton" destination="P7b-vm-k6T" id="vE4-5u-eVi"/>
+                <outlet property="registerAccountButton" destination="WSP-Vc-7g2" id="iZI-cS-f6t"/>
+                <outlet property="signInWithAppleButton" destination="P7b-vm-k6T" id="XCs-0u-3vh"/>
                 <outlet property="titleLabel" destination="7hZ-p7-g63" id="B4c-1A-9C0"/>
                 <outlet property="usernameTextField" destination="zaq-8W-i7D" id="8hh-ql-ti5"/>
                 <outlet property="view" destination="iN0-l3-epB" id="1Kk-gI-2CY"/>
@@ -38,7 +39,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETj-HQ-ozA">
-                                    <rect key="frame" x="16" y="239.5" width="343" height="188"/>
+                                    <rect key="frame" x="16" y="219.5" width="343" height="228"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zaq-8W-i7D">
                                             <rect key="frame" x="8" y="8" width="327" height="34"/>
@@ -62,16 +63,25 @@
                                                 <action selector="loginButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="sbm-Uh-i9X"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7b-vm-k6T">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7b-vm-k6T" customClass="ASAuthorizationAppleIDButton">
                                             <rect key="frame" x="8" y="140" width="327" height="40"/>
-                                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="40" id="sKi-i7-Cm6"/>
                                             </constraints>
                                             <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <state key="normal" title="Sign In With Apple ID"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WSP-Vc-7g2">
+                                            <rect key="frame" x="8" y="188" width="327" height="40"/>
+                                            <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="TVS-Rv-v2R"/>
+                                            </constraints>
+                                            <color key="tintColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <state key="normal" title="Register"/>
                                             <connections>
-                                                <action selector="registerButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="xsU-Rz-keD"/>
+                                                <action selector="registerButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="nkT-1t-950"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -80,12 +90,15 @@
                                         <constraint firstAttribute="trailing" secondItem="Ikd-jv-13s" secondAttribute="trailing" constant="8" id="2LX-1c-Uj3"/>
                                         <constraint firstItem="zaq-8W-i7D" firstAttribute="top" secondItem="ETj-HQ-ozA" secondAttribute="top" constant="8" id="2fC-bu-WqE"/>
                                         <constraint firstItem="IEf-qY-wNV" firstAttribute="top" secondItem="zaq-8W-i7D" secondAttribute="bottom" constant="8" id="CtT-nA-6bW"/>
+                                        <constraint firstItem="WSP-Vc-7g2" firstAttribute="leading" secondItem="ETj-HQ-ozA" secondAttribute="leading" constant="8" id="E4a-9m-hbg"/>
                                         <constraint firstItem="Ikd-jv-13s" firstAttribute="top" secondItem="IEf-qY-wNV" secondAttribute="bottom" constant="8" id="Rt4-Sp-Ab7"/>
                                         <constraint firstItem="Ikd-jv-13s" firstAttribute="leading" secondItem="ETj-HQ-ozA" secondAttribute="leading" constant="8" id="Ubm-F3-5ft"/>
                                         <constraint firstItem="P7b-vm-k6T" firstAttribute="leading" secondItem="ETj-HQ-ozA" secondAttribute="leading" constant="8" id="UtL-eA-nTI"/>
-                                        <constraint firstAttribute="bottom" secondItem="P7b-vm-k6T" secondAttribute="bottom" constant="8" id="Vdw-YA-1fl"/>
                                         <constraint firstItem="zaq-8W-i7D" firstAttribute="centerX" secondItem="ETj-HQ-ozA" secondAttribute="centerX" id="aTs-FL-OaY"/>
                                         <constraint firstAttribute="trailing" secondItem="P7b-vm-k6T" secondAttribute="trailing" constant="8" id="fiB-23-cKV"/>
+                                        <constraint firstAttribute="bottom" secondItem="WSP-Vc-7g2" secondAttribute="bottom" id="hfA-Aw-sCx"/>
+                                        <constraint firstAttribute="trailing" secondItem="WSP-Vc-7g2" secondAttribute="trailing" constant="8" id="im3-kC-8ac"/>
+                                        <constraint firstItem="WSP-Vc-7g2" firstAttribute="top" secondItem="P7b-vm-k6T" secondAttribute="bottom" constant="8" id="lO6-CF-2jF"/>
                                         <constraint firstItem="IEf-qY-wNV" firstAttribute="leading" secondItem="ETj-HQ-ozA" secondAttribute="leading" constant="8" id="pFv-Gw-cSl"/>
                                         <constraint firstAttribute="trailing" secondItem="zaq-8W-i7D" secondAttribute="trailing" constant="8" id="rHl-Dk-hFF"/>
                                         <constraint firstItem="P7b-vm-k6T" firstAttribute="top" secondItem="Ikd-jv-13s" secondAttribute="bottom" constant="8" id="sZO-4d-Lai"/>
@@ -94,7 +107,7 @@
                                     </constraints>
                                 </view>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="700" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ChP-Ky-rvR">
-                                    <rect key="frame" x="20.5" y="52.5" width="334" height="171"/>
+                                    <rect key="frame" x="40" y="52.5" width="295" height="151"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="ChP-Ky-rvR" secondAttribute="height" multiplier="197:101" id="OPh-be-VrM"/>
                                     </constraints>

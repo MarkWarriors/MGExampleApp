@@ -10,8 +10,9 @@ import CommonUI
 import CommonDomain
 import CommonStrings
 import CommonComponents
+import AuthenticationServices
 
-final class LoginViewPresenter: LoginViewPresenterType {
+final class LoginViewPresenter: NSObject, LoginViewPresenterType {
   typealias Strings = ModuleStrings.Scenes.Login
 
   private let loginUseCase: LoginUseCaseType
@@ -62,6 +63,16 @@ final class LoginViewPresenter: LoginViewPresenterType {
     router?.presentRegisterAccount()
   }
 
+  func signInWithAppleButtonTapped(context: ASAuthorizationControllerPresentationContextProviding) {
+    let request = ASAuthorizationAppleIDProvider().createRequest()
+    request.requestedScopes = [.fullName, .email]
+
+    let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+    authorizationController.delegate = self
+    authorizationController.presentationContextProvider = view
+    authorizationController.performRequests()
+  }
+
   private func handleLoginSuccess(username: String) {
     let loggedAccount = Account(name: username)
     accountCache.saveCurrentAccount(loggedAccount)
@@ -96,5 +107,23 @@ final class LoginViewPresenter: LoginViewPresenterType {
   
   private func passwordIsValid(_ password: String) -> Bool {
     return password.count > 2
+  }
+}
+
+extension LoginViewPresenter: ASAuthorizationControllerDelegate {
+  func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+    
+  }
+
+  func authorizationController(controller: ASAuthorizationController,
+                               didCompleteWithAuthorization authorization: ASAuthorization) {
+    if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+      let userIdentifier = appleIDCredential.user
+      let fullName = appleIDCredential.fullName
+      let email = appleIDCredential.email
+    } else if let passwordCredential = authorization.credential as? ASPasswordCredential {
+      let username = passwordCredential.user
+      let password = passwordCredential.password
+    }
   }
 }

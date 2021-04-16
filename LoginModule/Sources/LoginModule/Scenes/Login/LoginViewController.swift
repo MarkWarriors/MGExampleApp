@@ -11,6 +11,7 @@ import Networking
 import CommonDomain
 import CommonComponents
 import CommonStrings
+import AuthenticationServices
 
 final class LoginViewController: UIViewController {
   @TitleLabel() @IBOutlet private var titleLabel: UILabel!
@@ -18,6 +19,7 @@ final class LoginViewController: UIViewController {
   @IBOutlet private var usernameTextField: UITextField!
   @IBOutlet private var passwordTextField: UITextField!
   @IBOutlet private var loginButton: UIButton!
+  @IBOutlet private var signInWithAppleButton: ASAuthorizationAppleIDButton!
   @IBOutlet private var registerAccountButton: UIButton!
   
   private let presenter: LoginViewPresenterType
@@ -51,6 +53,7 @@ final class LoginViewController: UIViewController {
   private func configureOutlets() {
     usernameTextField.delegate = self
     passwordTextField.delegate = self
+    signInWithAppleButton.addTarget(self, action: #selector(signInWithAppleButtonTapped), for: .touchUpInside)
   }
   
   @IBAction private func loginButtonTapped(sender: AnyObject) {
@@ -60,6 +63,10 @@ final class LoginViewController: UIViewController {
     else { return }
     presenter.loginButtonTapped(username: username,
                                 password: password)
+  }
+
+  @objc private func signInWithAppleButtonTapped() {
+    presenter.signInWithAppleButtonTapped(context: self)
   }
   
   @IBAction private func registerButtonTapped(sender: AnyObject) {
@@ -142,5 +149,11 @@ extension LoginViewController: UIGestureRecognizerDelegate {
     //    activeTextInput?.resignFirstResponder()
     //    return false
     return true
+  }
+}
+
+extension LoginViewController: ASAuthorizationControllerPresentationContextProviding {
+  func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+    return self.view.window!
   }
 }

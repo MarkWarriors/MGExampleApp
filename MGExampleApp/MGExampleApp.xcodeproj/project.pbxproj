@@ -107,6 +107,7 @@
 /* Begin PBXFileReference section */
 		900D0AA325F924BD0070774B /* MainAppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppConfig.swift; sourceTree = "<group>"; };
 		900D0AAC25F92AFE0070774B /* MainAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppDependencies.swift; sourceTree = "<group>"; };
+		90144EB92628789200405B7A /* MGExampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MGExampleApp.entitlements; sourceTree = "<group>"; };
 		901AA54A258B877900229C09 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		901AA54B258B877900229C09 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		9033EE7D261E11070085A570 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
@@ -279,6 +280,7 @@
 		909F2CE42588F83E00E43399 /* MGExampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				90144EB92628789200405B7A /* MGExampleApp.entitlements */,
 				900D0AAC25F92AFE0070774B /* MainAppDependencies.swift */,
 				900D0AAB25F92AE00070774B /* Sources */,
 				908DD088258B9797008B6618 /* Resources */,
@@ -881,6 +883,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MGExampleApp/MGExampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -900,6 +903,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MGExampleApp/MGExampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1062,6 +1066,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MGExampleApp/MGExampleApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Configs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
