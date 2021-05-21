@@ -109,6 +109,7 @@
 		900D0AAC25F92AFE0070774B /* MainAppDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAppDependencies.swift; sourceTree = "<group>"; };
 		901AA54A258B877900229C09 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		901AA54B258B877900229C09 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		90202E5F2657E9A2001811BB /* CIScript.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = CIScript.sh; sourceTree = "<group>"; };
 		9033EE7D261E11070085A570 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
 		909F2CE22588F83E00E43399 /* MGExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		909F2CE52588F83E00E43399 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -255,6 +256,7 @@
 		909F2CD92588F83E00E43399 = {
 			isa = PBXGroup;
 			children = (
+				90202E5F2657E9A2001811BB /* CIScript.sh */,
 				90B6C9F2260BAC3500790678 /* Configs */,
 				909F2CE42588F83E00E43399 /* MGExampleApp */,
 				90C6826B25FA7CB40089FC92 /* MGWidgetExampleApp */,

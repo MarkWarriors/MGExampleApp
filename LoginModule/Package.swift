@@ -43,6 +43,10 @@ let package = Package(
       dependencies: [
         "LoginModule",
         "SnapshotTesting"
+      ],
+      exclude: [
+        "Scenes/Login/__Snapshots__",
+        "Scenes/RegisterAccount/__Snapshots__"
       ]
     ),
   ]

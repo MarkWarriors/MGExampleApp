@@ -44,7 +44,8 @@ let package = Package(
       dependencies: [
         "SettingsModule",
         "SnapshotTesting"
-      ]
+      ],
+      exclude: ["SettingsView/__Snapshots__/SettingsViewSnapshotTests"]
     ),
   ]
 )

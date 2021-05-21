@@ -41,6 +41,9 @@ let package = Package(
       dependencies: [
         "HomeModule",
         "SnapshotTesting"
+      ],
+      exclude: [
+        "Scenes/Home/__Snapshots__"
       ]
     ),
   ]

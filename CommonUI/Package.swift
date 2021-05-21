@@ -3,8 +3,6 @@
 
 import PackageDescription
 
-import PackageDescription
-
 let package = Package(
   name: "CommonUI",
   platforms: [.iOS(.v13)],

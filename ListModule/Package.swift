@@ -41,6 +41,10 @@ let package = Package(
       dependencies: [
         "ListModule",
         "SnapshotTesting"
+      ],
+      exclude: [
+        "Scenes/EventDetail/__Snapshots__",
+        "Scenes/List/__Snapshots__"
       ]
     ),
   ]
