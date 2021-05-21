@@ -29,6 +29,7 @@ jobs:
             chmod +x CIScript.sh
             sh CIScript.sh
           shell: bash
+          working-directory: MGExampleApp
         - name: Build and test
           run: |
             xcodebuild clean test -workspace MGExampleApp.xcworkspace -scheme MGExampleApp-Mock -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
