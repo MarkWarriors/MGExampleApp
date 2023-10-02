@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol XIBLoadable: class {
+public protocol XIBLoadable: AnyObject {
   static func loadFromXib() -> Self
 }
 

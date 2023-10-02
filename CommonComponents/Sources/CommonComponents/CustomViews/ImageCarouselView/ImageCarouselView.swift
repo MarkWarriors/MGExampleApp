@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol ImageCarouselViewDelegate: class {
+public protocol ImageCarouselViewDelegate: AnyObject {
   func imageCarouselView(_: ImageCarouselView, didTapImageAtIndex index: Int, in images: ImagesCollectionType)
 }
 

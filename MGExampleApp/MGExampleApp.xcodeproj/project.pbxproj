@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -38,7 +38,7 @@
 		90C6827025FA7CB50089FC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90C6826F25FA7CB50089FC92 /* Assets.xcassets */; };
 		90C6827225FA7CB50089FC92 /* MGWidgetExampleApp.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 90C6826E25FA7CB40089FC92 /* MGWidgetExampleApp.intentdefinition */; };
 		90C6827325FA7CB50089FC92 /* MGWidgetExampleApp.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 90C6826E25FA7CB40089FC92 /* MGWidgetExampleApp.intentdefinition */; };
-		90C6827625FA7CB50089FC92 /* MGWidgetExampleAppExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 90C6826625FA7CB40089FC92 /* MGWidgetExampleAppExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90C6827625FA7CB50089FC92 /* MGWidgetExampleAppExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 90C6826625FA7CB40089FC92 /* MGWidgetExampleAppExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		90CB8238260A101F009D4D77 /* MGWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB822E260A0F80009D4D77 /* MGWidgetView.swift */; };
 		90CB8252260A1791009D4D77 /* WidgetImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90CB824C260A176A009D4D77 /* WidgetImages.xcassets */; };
 		90CB825B260A1927009D4D77 /* MainAppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900D0AA325F924BD0070774B /* MainAppConfig.swift */; };
@@ -46,7 +46,7 @@
 		90CB8267260A1AF3009D4D77 /* MockServer in Frameworks */ = {isa = PBXBuildFile; productRef = 90CB8266260A1AF3009D4D77 /* MockServer */; };
 		90CB8276260A22A1009D4D77 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90CB8275260A22A1009D4D77 /* Intents.framework */; };
 		90CB8279260A22A1009D4D77 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CB8278260A22A1009D4D77 /* IntentHandler.swift */; };
-		90CB827D260A22A1009D4D77 /* MGWidgetExampleIntentHandler.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 90CB8274260A22A1009D4D77 /* MGWidgetExampleIntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		90CB827D260A22A1009D4D77 /* MGWidgetExampleIntentHandler.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 90CB8274260A22A1009D4D77 /* MGWidgetExampleIntentHandler.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		90CB8290260A236F009D4D77 /* MGWidgetExampleApp.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 90C6826E25FA7CB40089FC92 /* MGWidgetExampleApp.intentdefinition */; };
 		90CB8299260A2396009D4D77 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = 90CB8298260A2396009D4D77 /* Networking */; };
 		90CB829B260A239A009D4D77 /* MockServer in Frameworks */ = {isa = PBXBuildFile; productRef = 90CB829A260A239A009D4D77 /* MockServer */; };
@@ -90,16 +90,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		90C6827725FA7CB50089FC92 /* Embed App Extensions */ = {
+		90C6827725FA7CB50089FC92 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				90CB827D260A22A1009D4D77 /* MGWidgetExampleIntentHandler.appex in Embed App Extensions */,
-				90C6827625FA7CB50089FC92 /* MGWidgetExampleAppExtension.appex in Embed App Extensions */,
+				90CB827D260A22A1009D4D77 /* MGWidgetExampleIntentHandler.appex in Embed Foundation Extensions */,
+				90C6827625FA7CB50089FC92 /* MGWidgetExampleAppExtension.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -417,7 +417,7 @@
 				909F2CDE2588F83E00E43399 /* Sources */,
 				909F2CDF2588F83E00E43399 /* Frameworks */,
 				909F2CE02588F83E00E43399 /* Resources */,
-				90C6827725FA7CB50089FC92 /* Embed App Extensions */,
+				90C6827725FA7CB50089FC92 /* Embed Foundation Extensions */,
 				90B6CA31260BAECF00790678 /* Copy Config Script */,
 				90F0B6BF260BD2AA001E1530 /* TODO FIXME as Warning Script */,
 			);
@@ -532,8 +532,9 @@
 		909F2CDA2588F83E00E43399 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					909F2CE12588F83E00E43399 = {
 						CreatedOnToolsVersion = 12.2;
@@ -628,6 +629,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		90B6CA31260BAECF00790678 /* Copy Config Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -647,6 +649,7 @@
 		};
 		90F0B6BF260BD2AA001E1530 /* TODO FIXME as Warning Script */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -796,6 +799,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -859,6 +863,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1034,6 +1039,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;

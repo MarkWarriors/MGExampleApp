@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol Parallaxable: class {
+public protocol Parallaxable: AnyObject {
   /// A value in the range of -1 to +1
   var parallax: CGFloat { get set }
   var frame: CGRect { get }
