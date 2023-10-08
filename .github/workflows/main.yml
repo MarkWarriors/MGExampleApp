@@ -23,7 +23,8 @@ jobs:
             destination: ['platform=iOS Simulator,OS=16.2,name=iPhone 14']
       steps:
         - name: Checkout
-          uses: actions/checkout@master
+        - uses: actions/checkout@master
+            with: xcode-version: '15.0'
         - name: Run CIScript
           run: |
             chmod +x CIScript.sh
