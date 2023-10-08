@@ -26,7 +26,7 @@ jobs:
         - name: Xcode Select Version
           uses: mobiledevops/xcode-select-version-action@v1
           with:
-            xcode-select-version: 14.2
+            xcode-select-version: 15.0
         - run: xcodebuild -version 
         - name: Run CIScript
           run: |
